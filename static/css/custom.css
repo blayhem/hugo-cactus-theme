@@ -1,0 +1,81 @@
+*:not(.symbol) {
+    font-family: monospace !important;
+}
+
+nav.main-nav {
+    background-color: #222;
+}
+
+nav.main-nav a.cta {
+    display: none;
+}
+
+body {
+    background-color: #222;
+}
+
+#post-list a {
+    color: #939FA8;
+}
+
+.profile h1, .post h1, h1 {
+    color: #fff;
+}
+
+.post h2 {
+    color: #DC635C;
+    font-size: 1.3em;
+}
+
+.post h3 {
+    color: #6F7D8C;
+    font-size: 1.2em;
+}
+
+.post h4, .post h5, .post h6, p {
+    color: #FAFAFA;
+}
+
+p > a {
+    position: relative;
+    color: #77A0A9;
+    text-decoration: none;
+}
+
+#post-list.archive.readmore h3 {
+    color: #77A0A9;
+}
+
+p > a:hover {
+    color: #DC635C;
+}
+
+p > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #DC635C;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+p > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+b, strong {
+    background-color: #CCDBDC;
+    font-weight: 800;
+}
+
+#sharing a.facebook {
+    display: none;
+}
